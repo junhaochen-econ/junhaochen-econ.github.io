@@ -25,6 +25,13 @@
     </script>
 
     <style>
+        @font-face {
+            font-family: 'LXGWWenKai';
+            src: url('assets/fonts/LXGWWenKai-Medium.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
         /* General Reset */
         body {
             font-family: 'Georgia', 'Times New Roman', serif;
@@ -42,7 +49,7 @@
         header {
             background-color: #fff;
             border-bottom: 1px solid #eee;
-            padding: 25px 40px; /* Increased padding slightly */
+            padding: 25px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -54,7 +61,7 @@
 
         .header-name h1 {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 28px; /* Increased from 22px */
+            font-size: 28px;
             font-weight: 700;
             margin: 0;
             color: #2c3e50;
@@ -62,9 +69,9 @@
         
         .header-name p {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 18px; /* Increased from 14px */
+            font-size: 18px;
             color: #777;
-            margin: 5px 0 0 0; /* Added small top margin */
+            margin: 5px 0 0 0;
         }
 
         nav ul {
@@ -72,7 +79,7 @@
             margin: 0;
             padding: 0;
             display: flex;
-            gap: 30px; /* Increased gap between links */
+            gap: 30px;
         }
 
         nav a {
@@ -80,7 +87,7 @@
             color: #555;
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             font-weight: 600;
-            font-size: 18px; /* Increased from 15px */
+            font-size: 18px;
             transition: color 0.2s;
         }
 
@@ -91,7 +98,7 @@
         /* --- 2. Main Content (Middle) --- */
         main {
             flex-grow: 1;
-            max-width: 900px; /* Slightly wider to match larger header */
+            max-width: 1000px;
             margin: 60px auto; 
             padding: 0 20px;
             display: flex;
@@ -105,7 +112,7 @@
         }
 
         .profile-img {
-            width: 220px; /* Slightly larger photo */
+            width: 220px;
             height: 220px;
             object-fit: cover;
             border-radius: 50%;
@@ -126,7 +133,7 @@
             margin-bottom: 20px;
         }
 
-        p { margin-bottom: 18px; font-size: 18px; } /* Increased body text slightly */
+        p { margin-bottom: 32px; font-size: 17px; }
 
         a.text-link {
             color: #980000;
@@ -185,12 +192,12 @@
 
     <header>
         <div class="header-name">
-            <h1>Junhao Chen (陈君昊)</h1>
+            <h1>Junhao Chen <span style="font-family: 'LXGWWenKai', serif; font-weight: 700;">(陈君昊)</span></h1>
             <p>Renmin University of China</p>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="research/CV_Junhao_Chen.pdf" target="_blank">CV</a></li>
                 <li><a href="teaching.html">Teaching</a></li>
             </ul>
@@ -203,14 +210,18 @@
        </div>
 
         <div class="bio-text">
-            <h2 style="color: #276db7;">Junhao Chen 陈君昊</h2>
+            <h2 style="color: #276db7;">Junhao Chen <span style="font-family: 'LXGWWenKai', serif; font-weight: 700;">陈君昊</span></h2>
             <p>
-                Hi! I am Junhao Chen. I am currently an undergraduate student in the 
-                Honor Program in Economics and Mathematics at Renmin University of China (Renmin).
+                Welcome! I am Junhao Chen. I am currently completing my junior year in the 
+                Honor Program in Economics and Mathematics at Renmin University of China.
             </p>
             <p>
-                My research interests lie in microeconomic theory and information economics,
+                My research interest lies in microeconomic theory and information economics,
                 which I aim to explore in my graduate studies.
+            </p>
+            <p>
+                Prior to university, I graduated from the <a href="https://en.wikipedia.org/wiki/Affiliated_High_School_of_South_China_Normal_University" target="_blank" rel="noopener noreferrer" class="text-link">Affiliated High School of SCNU</a>
+                (Guangdong Olympiad School, Mathematics Track) in 2023.
             </p>
         </div>
     </main>
@@ -229,7 +240,6 @@
                 <strong>Address</strong>
                 School of Economics<br>
                 Renmin University of China<br>
-                No. 59 Zhongguancun Street<br>
                 Beijing, China, 100872
             </div>
         </div>

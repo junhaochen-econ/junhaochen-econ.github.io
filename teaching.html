@@ -25,6 +25,13 @@
     </script>
 
     <style>
+        @font-face {
+            font-family: 'LXGWWenKai';
+            src: url('assets/fonts/LXGWWenKai-Medium.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
         /* General Reset */
         body {
             font-family: 'Georgia', 'Times New Roman', serif;
@@ -64,7 +71,7 @@
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             font-size: 18px;
             color: #777;
-            margin: 5px 0 0 0;
+            margin: 5px 0 0 0; /* Added small top margin */
         }
 
         nav ul {
@@ -124,7 +131,7 @@
         }
 
         .course-title {
-            font-size: 19px;
+            font-size: 17px;
             font-weight: bold;
             color: #2c3e50;
         }
@@ -142,6 +149,7 @@
         }
 
         ul.teaching-details {
+            font-size: 15px;
             margin-top: 10px;
             padding-left: 20px;
         }
@@ -199,14 +207,14 @@
 
     <header>
         <div class="header-name">
-            <h1>Junhao Chen (陈君昊)</h1>
+            <h1>Junhao Chen <span style="font-family: 'LXGWWenKai', serif; font-weight: 700;">(陈君昊)</span></h1>
             <p>Renmin University of China</p>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="research/CV_Junhao_Chen.pdf" target="_blank">CV</a></li>
-                <li><a href="teaching.html" class="active">Teaching</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
             </ul>
         </nav>
     </header>
@@ -217,13 +225,14 @@
         <div class="teaching-entry">
             <div class="course-title">Theory of Industrial Organization (Undergraduate, math-intensive)</div>
             <div class="course-meta">
-                Fall 2025, Instructor: Zhonghong Kuang
+                2025 Fall, Instructor: Zhonghong Kuang
             </div>
             
             <ul class="teaching-details">
                 <li>The course covers traditional IO theory, contemporary tools (e.g., mechanism design and Bayesian persuasion), 
                 and advanced topics (e.g., algorithmic pricing).</li>
-                <li>Contributed to course materials including lecture slides and problem sets; led Q&A sessions.</li>
+                <li>Contributed to slides and problem sets, led Q&A sessions, and recorded video 
+                lectures on selected topics.</li>
             </ul>
         </div>
 
@@ -243,7 +252,6 @@
                 <strong>Address</strong>
                 School of Economics<br>
                 Renmin University of China<br>
-                No. 59 Zhongguancun Street<br>
                 Beijing, China, 100872
             </div>
         </div>
