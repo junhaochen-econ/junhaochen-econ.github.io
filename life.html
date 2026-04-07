@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <title>Teaching | Junhao Chen</title>
+    <title>Life | Junhao Chen</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/academicons.min.css"/>
@@ -49,7 +49,7 @@
             min-height: 100vh;
         }
 
-        /* --- 1. Top Header (Upside) --- */
+        /* Top Header */
         header {
             background-color: #fff;
             border-bottom: 1px solid #eee;
@@ -75,7 +75,7 @@
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             font-size: 18px;
             color: #777;
-            margin: 5px 0 0 0; /* Added small top margin */
+            margin: 5px 0 0 0;
         }
 
         nav ul {
@@ -95,29 +95,35 @@
             transition: color 0.2s;
         }
 
-        /* Active state for current page */
         nav a:hover, nav a.active {
             color: #980000;
         }
 
-        /* --- 2. Main Content (Middle) --- */
+        /* Main Content */
         main {
             flex-grow: 1;
-            max-width: 800px; /* Standard reading width */
+            max-width: 800px; 
             margin: 60px auto; 
             padding: 0 20px;
             width: 100%;
             box-sizing: border-box;
         }
 
-        /* Typography for Teaching Page */
         h2.page-title {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 28px;
+            font-size: 20px;
             margin-top: 0;
-            margin-bottom: 40px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #f0f0f0;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #333;
+        }
+
+        .intro-concise {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 50px;
+            letter-spacing: 0.5px;
         }
 
         h3.section-title {
@@ -125,60 +131,89 @@
             font-size: 20px;
             font-weight: 700;
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             letter-spacing: 0.5px;
             margin-top: 40px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
         }
 
-        h3.section-title:first-child {
-            margin-top: 0;
+        /* Poem Specific Styles */
+        .poem-container {
+            margin-bottom: 40px;
+            padding: 25px;
+            background-color: #fbfbfb;
+            border-radius: 8px;
+            border-left: 3px solid #980000;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
         }
 
-        .teaching-entry {
-            margin-bottom: 30px;
-        }
-
-        .course-title {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        .poem-title {
+            font-family: 'LXGWWenKai', serif;
             font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .poem-content {
+            font-family: 'LXGWWenKai', serif;
+            font-size: 16px;
+            line-height: 2;
+            color: #444;
+            white-space: pre-wrap; 
+            margin-bottom: 20px;
+        }
+        
+        /*Toggle Button */
+        .toggle-btn {
+            background-color: #f7f7f7;
+            color: #555;
+            border: 1px solid #eaeaea;
+            padding: 6px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            transition: all 0.2s ease;
+            margin-bottom: 15px;
+            margin-top: 5px;
+        }
+
+        .toggle-btn:hover {
+            background-color: #980000;
+            color: #fff;
+            border-color: #980000;
+        }
+
+        .poem-translation {
+            display: none; 
+            border-top: none;
+            padding-top: 15px;
+            margin-top: 15px;
+            white-space: normal;
+        }
+
+        .translation-title {
+            display: block;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             font-weight: bold;
-            color: #555;
-        }
-
-        .course-meta {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #666;
-            margin-top: 4px;
-            margin-bottom: 12px;
-        }
-
-        .course-desc {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #555;
+            font-size: 16px;
+            color: #333;
             margin-bottom: 10px;
         }
 
-        a.text-link {
-            color: #337ab7;
-            text-decoration: none;
-        }
-        a.text-link:hover { border-bottom: 1px solid #337ab7; }
-
-        ul.teaching-details {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        .translation-content {
+            font-family: 'Georgia', 'Times New Roman', serif;
             font-size: 14px;
+            line-height: 1.5;
             color: #555;
-            line-height: 1.8;
-            margin-top: 10px;
-            padding-left: 20px;
+            margin-top: 0;
+            white-space: pre-wrap;
+            font-style: italic;
         }
-        
-        ul.teaching-details li {
-            margin-bottom: 8px;
-        }
-        /* --- 3. Footer (Downside) --- */
+
+        /* Footer */
         footer {
             background-color: #f9f9f9;
             border-top: 1px solid #eee;
@@ -212,9 +247,9 @@
             text-decoration: none;
             font-size: 15px;
         }
+        
         .social-links a:hover { color: #980000; }
 
-        /* Mobile Adjustments */
         @media (max-width: 768px) {
             header { flex-direction: column; gap: 15px; text-align: center; padding: 20px; }
             .footer-content { flex-direction: column; text-align: center; }
@@ -242,19 +277,54 @@
     </header>
 
     <main>
-        <h3 class="section-title">Teaching Assistant at Renmin</h3>
-        
-        <div class="teaching-entry">
-            <div class="course-title">Theory of Industrial Organization (math-intensive)</div>
-            <div class="course-meta">
-                2025 Fall, for <a href="https://zhkuang.weebly.com/" class="text-link">Zhonghong Kuang</a>
+        <div class="intro-concise">
+            Beyond academics, I enjoy reading, listening to music, and writing poetry.
+        </div>
+
+        <h3 class="section-title">Original Poetry</h3>
+
+        <div class="poem-container">
+            <div class="poem-title">临江仙・偕友游云龙湖</div>
+            <div class="poem-content">雪霁云龙开净鉴，青山素裹参差。琼台深砌碎花瓷。风高松坠玉，日冷塔凝脂。
+久立桥头呵冻手，笑谈鸥鹭迟迟。芦荻心事有谁知？扶摇身后远，多少拣寒枝。</div>
+    
+            <button class="toggle-btn" onclick="toggleTranslation(this)">Show English Translation</button>
+    
+            <div class="poem-translation">
+                <div class="translation-title">Linjiangxian · Strolling with Friends by Yunlong Lake</div>
+                <div class="translation-content">The lake gleams like a mirror, snow just cleared away;
+Hills clad in pristine white stretch in a jagged array.
+The terraces seem paved with porcelain flecks so bright.
+Wind rocks the pines, snow falls like jade in sway;
+Sun chills the temple, there lies cream congealed in light.
+
+Long on the bridge we stand, warming our frozen hands,
+Chatting and laughing at gulls’ sluggish flight.
+Who knows the reeds’ thoughts along the strands?
+Behind me soar the dreams once grand—
+How many wintry branches I’ve picked in life’s lands.</div>
             </div>
+        </div>
+
+        <div class="poem-container">
+            <div class="poem-title">绿萝</div>
+            <div class="poem-content">春秋同气宇，天地倚亭亭。满眼盘经纬，随心探止行。
+堪居素罐浅，讵畏燕云冥。敷阴才不济，吐纳一室清。</div>
             
-            <ul class="teaching-details">
-                <li>The course covers traditional IO theory, contemporary tools (e.g., mechanism design and Bayesian persuasion), 
-                and advanced topics (e.g., algorithmic pricing).</li>
-                <li>Contributed to slides, led Q&A sessions, and recorded video lectures on selected topics.</li>
-            </ul>
+            <button class="toggle-btn" onclick="toggleTranslation(this)">Show English Translation</button>
+            
+            <div class="poem-translation">
+                <div class="translation-title">Green Pothos</div>
+                <div class="translation-content">Through spring and fall, one constant grace,
+Between the sky and earth, upright in place.
+A full-eyed weave of warp and weft on show,
+It probes at will exactly where to go.
+
+Content to live in a shallow plain pot,
+What fear of dark northern clouds, however fraught?
+Its canopy is sparse, its shadow bare,
+Yet breathing, it purifies the chamber's air.</div>
+            </div>
         </div>
 
     </main>
@@ -277,6 +347,19 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleTranslation(btn) {
+            var translationDiv = btn.nextElementSibling;
+            if (translationDiv.style.display === "none" || translationDiv.style.display === "") {
+                translationDiv.style.display = "block";
+                btn.textContent = "Hide English Translation";
+            } else {
+                translationDiv.style.display = "none";
+                btn.textContent = "Show English Translation";
+            }
+        }
+    </script>
 
 </body>
 </html>
