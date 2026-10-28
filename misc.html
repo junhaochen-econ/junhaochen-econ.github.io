@@ -29,8 +29,7 @@
         }
 
         h2.page-title {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 20px;
+            font-size: var(--text-section);
             margin-top: 0;
             margin-bottom: 10px;
             text-align: center;
@@ -38,21 +37,13 @@
         }
 
         .intro-concise {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 17px;
             color: #555;
             margin-bottom: 50px;
             letter-spacing: 0.5px;
         }
 
         h3.section-title {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 20px;
-            font-weight: 700;
-            color: #333;
             margin-bottom: 25px;
-            letter-spacing: 0.5px;
-            margin-top: 40px;
             border-bottom: 2px solid #f0f0f0;
             padding-bottom: 10px;
         }
@@ -68,16 +59,14 @@
         }
 
         .poem-title {
-            font-family: 'LXGWWenKai', serif;
-            font-size: 17px;
+            font-family: var(--font-chinese);
             font-weight: 700;
             margin-bottom: 15px;
             color: #2c3e50;
         }
 
         .poem-content {
-            font-family: 'LXGWWenKai', serif;
-            font-size: 17px;
+            font-family: var(--font-chinese);
             line-height: 2;
             color: #444;
             white-space: pre-wrap; 
@@ -92,7 +81,7 @@
             padding: 6px 16px;
             border-radius: 20px;
             cursor: pointer;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-family: inherit;
             font-size: 13px;
             transition: all 0.2s ease;
             margin-bottom: 15px;
@@ -115,16 +104,14 @@
 
         .translation-title {
             display: block;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             font-weight: bold;
-            font-size: 17px;
             color: #333;
             margin-bottom: 10px;
         }
 
         .translation-content {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            font-size: 15px;
+            font-family: var(--font-serif);
+            font-size: var(--text-small);
             line-height: 1.5;
             color: #555;
             margin-top: 0;
@@ -138,7 +125,7 @@
 
     <header>
         <div class="header-name">
-            <h1>Junhao Chen <span style="font-family: 'LXGWWenKai', serif; font-weight: 700;">(陈君昊)</span></h1>
+            <h1>Junhao Chen <span class="chinese-name">(陈君昊)</span></h1>
             <p>Renmin University of China</p>
         </div>
         <nav>
